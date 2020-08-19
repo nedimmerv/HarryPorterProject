@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports",
                 },
         features = "src/test/resources/features",
-        glue = "com/wallbox/step_defs",
+        glue = "/step_defs",
         dryRun =false,
-        tags="@wip"
+        tags="@api"
 
 )
 

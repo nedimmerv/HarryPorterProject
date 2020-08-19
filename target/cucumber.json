@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-19T22:38:14.651Z",
+        "line": 3,
+        "name": "sorting hat",
+        "description": "",
+        "id": "verify-sorting-hat;sorting-hat",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 912980300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user goes to  BaseUri",
+            "match": {
+              "location": "ApiTest1.user_goes_to_BaseUri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2806738200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sends a Get request",
+            "match": {
+              "location": "ApiTest1.user_sends_a_Get_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3652700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "ApiTest1.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1335900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify that the contentType is \"application/json; charset\u003dutf-8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json; charset\u003dutf-8\"",
+                  "offset": 31
+                }
+              ],
+              "location": "ApiTest1.verify_that_the_contentType_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertFalse(Assert.java:64)\r\n\tat org.junit.Assert.assertFalse(Assert.java:74)\r\n\tat step_defs.ApiTest1.body_contains_one_of(ApiTest1.java:52)\r\n\tat ✽.body contains  one of(file:src/test/resources/features/api1.feature:8)\r\n",
+              "duration": 30919700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "body contains  one of",
+            "match": {
+              "location": "ApiTest1.body_contains_one_of(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "\"Gryffindor\"",
+                  "\"Ravenclaw\"",
+                  "\"Slytherin\"",
+                  "\"Hufflepuff\""
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "verify sorting hat",
+    "description": "",
+    "id": "verify-sorting-hat",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api1.feature",
+    "tags": []
+  }
+]
