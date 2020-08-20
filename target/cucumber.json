@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-20T21:55:13.095Z",
+        "start_timestamp": "2020-08-20T22:08:06.321Z",
         "line": 3,
-        "name": "verifying bad key",
+        "name": "verifying no Key",
         "description": "",
-        "id": "verify-bad-key;verifying-bad-key",
+        "id": "verify-no-key;verifying-no-key",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 970609200,
+              "duration": 1017185700,
               "status": "passed"
             },
             "line": 4,
@@ -25,63 +25,63 @@
           },
           {
             "result": {
-              "duration": 2965354500,
+              "duration": 2741636400,
               "status": "passed"
             },
             "line": 5,
-            "name": "send a Get request to characters endpoint",
+            "name": "send a Get request to characters endpoint without key",
             "match": {
-              "location": "ApiTest1.send_a_Get_request_to_characters_endpoint()"
+              "location": "ApiTest1.send_a_Get_request_to_characters_endpoint_without_key()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3107600,
+              "duration": 7453500,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify status code 401",
+            "name": "verify status code 409",
             "match": {
               "arguments": [
                 {
-                  "val": "401",
+                  "val": "409",
                   "offset": 19
                 }
               ],
               "location": "ApiTest1.verify_status_code(int)"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1163200,
+              "duration": 5370000,
               "status": "passed"
             },
             "line": 7,
-            "name": "content type \"application/json; charset\u003dutf-8\"",
+            "name": "verify that the contentType is \"application/json; charset\u003dutf-8\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"application/json; charset\u003dutf-8\"",
-                  "offset": 13
+                  "offset": 31
                 }
               ],
-              "location": "ApiTest1.content_type(String)"
+              "location": "ApiTest1.verify_that_the_contentType_is(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 849100,
+              "duration": 7290600,
               "status": "passed"
             },
             "line": 8,
-            "name": "verify response status message \"Unauthorized\"",
+            "name": "verify response status message \"Conflict\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Unauthorized\"",
+                  "val": "\"Conflict\"",
                   "offset": 31
                 }
               ],
@@ -91,11 +91,11 @@
           },
           {
             "result": {
-              "duration": 722484600,
+              "duration": 579037200,
               "status": "passed"
             },
             "line": 9,
-            "name": "verify response body says \"error\" :\"API Key Not Found\"",
+            "name": "verify response body says \"error\" :\"Must pass API key for request\"",
             "match": {
               "arguments": [
                 {
@@ -103,7 +103,7 @@
                   "offset": 26
                 },
                 {
-                  "val": "\"API Key Not Found\"",
+                  "val": "\"Must pass API key for request\"",
                   "offset": 35
                 }
               ],
@@ -114,16 +114,16 @@
         ],
         "tags": [
           {
-            "name": "@api2"
+            "name": "@api3"
           }
         ]
       }
     ],
-    "name": "verify bad key",
+    "name": "verify no key",
     "description": "",
-    "id": "verify-bad-key",
+    "id": "verify-no-key",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api2.feature",
+    "uri": "file:src/test/resources/features/api3.feature",
     "tags": []
   }
 ]

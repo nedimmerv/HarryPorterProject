@@ -53,6 +53,10 @@ public class ApiTest1 {
         Assert.assertTrue(list.contains(response.asString()));
 
     }
+    @When("send a Get request to characters endpoint without key")
+    public void send_a_Get_request_to_characters_endpoint_without_key() {
+        response = RestAssured.given().accept(ContentType.JSON).get("/v1/characters");
+    }
     @Given("send a Get request to characters endpoint")
     public void send_a_Get_request_to_characters_endpoint() {
         response = RestAssured.given().accept(ContentType.JSON).

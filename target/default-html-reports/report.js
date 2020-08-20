@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/api2.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/api3.feature");
 formatter.feature({
-  "name": "verify bad key",
+  "name": "verify no key",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "verifying bad key",
+  "name": "verifying no Key",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@api2"
+      "name": "@api3"
     }
   ]
 });
@@ -25,18 +25,18 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "send a Get request to characters endpoint",
+  "name": "send a Get request to characters endpoint without key",
   "keyword": "When "
 });
 formatter.match({
-  "location": "ApiTest1.send_a_Get_request_to_characters_endpoint()"
+  "location": "ApiTest1.send_a_Get_request_to_characters_endpoint_without_key()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify status code 401",
-  "keyword": "When "
+  "name": "verify status code 409",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "ApiTest1.verify_status_code(int)"
@@ -45,17 +45,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "content type \"application/json; charset\u003dutf-8\"",
-  "keyword": "And "
+  "name": "verify that the contentType is \"application/json; charset\u003dutf-8\"",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "ApiTest1.content_type(String)"
+  "location": "ApiTest1.verify_that_the_contentType_is(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify response status message \"Unauthorized\"",
+  "name": "verify response status message \"Conflict\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify response body says \"error\" :\"API Key Not Found\"",
+  "name": "verify response body says \"error\" :\"Must pass API key for request\"",
   "keyword": "Then "
 });
 formatter.match({
