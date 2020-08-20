@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-19T22:38:14.651Z",
+        "start_timestamp": "2020-08-20T21:55:13.095Z",
         "line": 3,
-        "name": "sorting hat",
+        "name": "verifying bad key",
         "description": "",
-        "id": "verify-sorting-hat;sorting-hat",
+        "id": "verify-bad-key;verifying-bad-key",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 912980300,
+              "duration": 970609200,
               "status": "passed"
             },
             "line": 4,
@@ -25,88 +25,105 @@
           },
           {
             "result": {
-              "duration": 2806738200,
+              "duration": 2965354500,
               "status": "passed"
             },
             "line": 5,
-            "name": "user sends a Get request",
+            "name": "send a Get request to characters endpoint",
             "match": {
-              "location": "ApiTest1.user_sends_a_Get_request()"
+              "location": "ApiTest1.send_a_Get_request_to_characters_endpoint()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3652700,
+              "duration": 3107600,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify status code 200",
+            "name": "verify status code 401",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
+                  "val": "401",
                   "offset": 19
                 }
               ],
               "location": "ApiTest1.verify_status_code(int)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1335900,
+              "duration": 1163200,
               "status": "passed"
             },
             "line": 7,
-            "name": "verify that the contentType is \"application/json; charset\u003dutf-8\"",
+            "name": "content type \"application/json; charset\u003dutf-8\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"application/json; charset\u003dutf-8\"",
+                  "offset": 13
+                }
+              ],
+              "location": "ApiTest1.content_type(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 849100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify response status message \"Unauthorized\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Unauthorized\"",
                   "offset": 31
                 }
               ],
-              "location": "ApiTest1.verify_that_the_contentType_is(String)"
+              "location": "ApiTest1.verify_response_status_message(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertFalse(Assert.java:64)\r\n\tat org.junit.Assert.assertFalse(Assert.java:74)\r\n\tat step_defs.ApiTest1.body_contains_one_of(ApiTest1.java:52)\r\n\tat ✽.body contains  one of(file:src/test/resources/features/api1.feature:8)\r\n",
-              "duration": 30919700,
-              "status": "failed"
+              "duration": 722484600,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "body contains  one of",
+            "line": 9,
+            "name": "verify response body says \"error\" :\"API Key Not Found\"",
             "match": {
-              "location": "ApiTest1.body_contains_one_of(String\u003e)"
+              "arguments": [
+                {
+                  "val": "\"error\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"API Key Not Found\"",
+                  "offset": 35
+                }
+              ],
+              "location": "ApiTest1.verify_response_body_says(String,String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "\"Gryffindor\"",
-                  "\"Ravenclaw\"",
-                  "\"Slytherin\"",
-                  "\"Hufflepuff\""
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api"
+            "name": "@api2"
           }
         ]
       }
     ],
-    "name": "verify sorting hat",
+    "name": "verify bad key",
     "description": "",
-    "id": "verify-sorting-hat",
+    "id": "verify-bad-key",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api1.feature",
+    "uri": "file:src/test/resources/features/api2.feature",
     "tags": []
   }
 ]

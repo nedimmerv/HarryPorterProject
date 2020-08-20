@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f120ad24-2721-4f25-9b3a-1489ff1b06ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_defs/ApiTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api2.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/APIPackage/test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_defs/ApiTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_defs/ApiTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-html-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-html-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/step_defs/ApiTest1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/step_defs/ApiTest1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,29 +172,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="68" key="GridCell.Tab.0.bottom" timestamp="1597876693051">
+    <state width="1237" height="113" key="GridCell.Tab.0.bottom" timestamp="1597960401213">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="68" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1597876693051" />
-    <state width="1237" height="68" key="GridCell.Tab.0.center" timestamp="1597876693051">
+    <state width="1237" height="113" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1597960401213" />
+    <state width="1237" height="113" key="GridCell.Tab.0.center" timestamp="1597960401213">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="68" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1597876693051" />
-    <state width="1237" height="68" key="GridCell.Tab.0.left" timestamp="1597876693051">
+    <state width="1237" height="113" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1597960401213" />
+    <state width="1237" height="113" key="GridCell.Tab.0.left" timestamp="1597960401213">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="68" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1597876693051" />
-    <state width="1237" height="68" key="GridCell.Tab.0.right" timestamp="1597876693051">
+    <state width="1237" height="113" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1597960401213" />
+    <state width="1237" height="113" key="GridCell.Tab.0.right" timestamp="1597960401213">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="68" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1597876693051" />
+    <state width="1237" height="113" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1597960401213" />
     <state x="170" y="151" key="Maven.ArtifactSearchDialog" timestamp="1597875016550">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="170" y="151" key="Maven.ArtifactSearchDialog/0.0.1280.984@0.0.1280.984" timestamp="1597875016550" />
-    <state x="143" y="138" key="SettingsEditor" timestamp="1597874920227">
+    <state x="143" y="138" key="SettingsEditor" timestamp="1597878380403">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="143" y="138" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1597874920227" />
+    <state x="143" y="138" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1597878380403" />
   </component>
 </project>

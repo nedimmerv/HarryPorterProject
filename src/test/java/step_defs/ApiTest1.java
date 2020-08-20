@@ -2,6 +2,7 @@ package step_defs;
 
 import io.cucumber.java.en.*;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
@@ -13,7 +14,7 @@ import static io.restassured.RestAssured.baseURI;
 
 
 public class ApiTest1 {
-    Response response;
+    static Response response;
 
     @Given("user goes to  BaseUri")
     public void user_goes_to_BaseUri() {
@@ -52,4 +53,36 @@ public class ApiTest1 {
         Assert.assertTrue(list.contains(response.asString()));
 
     }
+    @Given("send a Get request to characters endpoint")
+    public void send_a_Get_request_to_characters_endpoint() {
+        response = RestAssured.given().accept(ContentType.JSON).
+                queryParam("key",
+                        "$2a$10$u4.U/L35M5SSDRxAzGnByu1HvtxR0LyeOruKktfl2A.0RPDv8geD6...")
+                .get("/v1/characters");
+
     }
+
+    @When("content type {string}")
+    public void content_type(String str) {
+      String content_type=  response.getContentType();
+      Assert.assertEquals(str,content_type);
+        System.out.println("str = " + str);
+        System.out.println("content_type = " + content_type);
+
+    }
+
+    @Then("verify response status message {string}")
+    public void verify_response_status_message(String str) {
+      Assert.assertTrue(  response.statusLine().contains(str));
+
+    }
+
+    @Then("verify response body says {string} :{string}")
+    public void verify_response_body_says(String s1, String s2) {
+        Assert.assertEquals(response.body().path(s1),s2);
+        System.out.println("s1 = " + response.body().path(s1));
+        System.out.println("s2 = " + s2);
+
+    }
+
+}
