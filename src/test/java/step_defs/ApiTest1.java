@@ -9,6 +9,7 @@ import utilities.ConfigurationReader;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.baseURI;
 
@@ -88,5 +89,28 @@ public class ApiTest1 {
         System.out.println("s2 = " + s2);
 
     }
+    @When("send a Get request to characters")
+    public void send_a_Get_request_to_characters() {
+         response = RestAssured.given().accept(ContentType.JSON).
+                queryParam("key",
+                        "$2a$10$u4.U/L35M5SSDRxAzGnByu1HvtxR0LyeOruKktfl2A.0RPDv8geD6")
+                .get("v1/characters");
+       // System.out.println("response = " + response.prettyPrint());
+        Assert.assertEquals(response.statusCode(),200);
+        Assert.assertEquals(response.contentType(),"application/json; charset=utf-8");
 
+    }
+
+    @Then("verify response contains {int} characters")
+    public void verify_response_contains_characters(int numOfChars) {
+
+        List< Object> listCharacters = response.body().path("name");
+        System.out.println(listCharacters.size());
+        Assert.assertEquals(numOfChars,listCharacters.size());
+        System.out.println("listCharacters = " + listCharacters);
+        for (Object listCharacter : listCharacters) {
+            System.out.println("listCharacters = " + listCharacter);
+        }
+
+    }
 }

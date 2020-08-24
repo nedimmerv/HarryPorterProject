@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/api3.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/api4.feature");
 formatter.feature({
-  "name": "verify no key",
+  "name": "verify number of characters",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "verifying no Key",
+  "name": "verifying lenght of chars",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@api3"
+      "name": "@api4"
     }
   ]
 });
@@ -25,17 +25,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "send a Get request to characters endpoint without key",
+  "name": "send a Get request to characters",
   "keyword": "When "
 });
 formatter.match({
-  "location": "ApiTest1.send_a_Get_request_to_characters_endpoint_without_key()"
+  "location": "ApiTest1.send_a_Get_request_to_characters()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify status code 409",
+  "name": "verify status code 200",
   "keyword": "Then "
 });
 formatter.match({
@@ -55,21 +55,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify response status message \"Conflict\"",
+  "name": "verify response contains 195 characters",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ApiTest1.verify_response_status_message(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify response body says \"error\" :\"Must pass API key for request\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ApiTest1.verify_response_body_says(String,String)"
+  "location": "ApiTest1.verify_response_contains_characters(int)"
 });
 formatter.result({
   "status": "passed"

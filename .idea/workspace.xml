@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f120ad24-2721-4f25-9b3a-1489ff1b06ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api3.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api4.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/step_defs/ApiTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_defs/ApiTest1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-html-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-html-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -168,37 +169,57 @@
       <option name="presentableId" value="Default" />
       <updated>1597870016681</updated>
     </task>
+    <task id="LOCAL-00001" summary="last commit">
+      <created>1597961389679</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597961389679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="252" y="89" key="CommitChangelistDialog2" timestamp="1597961388111">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="252" y="89" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1597961388111" />
-    <state width="1237" height="239" key="GridCell.Tab.0.bottom" timestamp="1597961284632">
+    <state x="420" y="251" key="FileChooserDialogImpl" timestamp="1597963642649">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1597961284632" />
-    <state width="1237" height="239" key="GridCell.Tab.0.center" timestamp="1597961284632">
+    <state x="420" y="251" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1597963642649" />
+    <state width="1237" height="461" key="GridCell.Tab.0.bottom" timestamp="1598306778931">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1597961284632" />
-    <state width="1237" height="239" key="GridCell.Tab.0.left" timestamp="1597961284632">
+    <state width="1237" height="461" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1598306778931" />
+    <state width="1237" height="461" key="GridCell.Tab.0.center" timestamp="1598306778930">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1597961284632" />
-    <state width="1237" height="239" key="GridCell.Tab.0.right" timestamp="1597961284632">
+    <state width="1237" height="461" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1598306778930" />
+    <state width="1237" height="461" key="GridCell.Tab.0.left" timestamp="1598306778930">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="239" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1597961284632" />
+    <state width="1237" height="461" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1598306778930" />
+    <state width="1237" height="461" key="GridCell.Tab.0.right" timestamp="1598306778930">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="461" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1598306778930" />
     <state x="170" y="151" key="Maven.ArtifactSearchDialog" timestamp="1597875016550">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="170" y="151" key="Maven.ArtifactSearchDialog/0.0.1280.984@0.0.1280.984" timestamp="1597875016550" />
-    <state x="143" y="138" key="SettingsEditor" timestamp="1597878380403">
+    <state x="143" y="138" key="SettingsEditor" timestamp="1597963679985">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="143" y="138" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1597878380403" />
+    <state x="143" y="138" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1597963679985" />
+    <state x="348" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1598303308598">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="348" y="321" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1598303308598" />
     <state x="451" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597961366292">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-20T22:08:06.321Z",
+        "start_timestamp": "2020-08-24T22:06:32.533Z",
         "line": 3,
-        "name": "verifying no Key",
+        "name": "verifying lenght of chars",
         "description": "",
-        "id": "verify-no-key;verifying-no-key",
+        "id": "verify-number-of-characters;verifying-lenght-of-chars",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1017185700,
+              "duration": 1007130401,
               "status": "passed"
             },
             "line": 4,
@@ -25,27 +25,27 @@
           },
           {
             "result": {
-              "duration": 2741636400,
+              "duration": 3196468401,
               "status": "passed"
             },
             "line": 5,
-            "name": "send a Get request to characters endpoint without key",
+            "name": "send a Get request to characters",
             "match": {
-              "location": "ApiTest1.send_a_Get_request_to_characters_endpoint_without_key()"
+              "location": "ApiTest1.send_a_Get_request_to_characters()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7453500,
+              "duration": 928300,
               "status": "passed"
             },
             "line": 6,
-            "name": "verify status code 409",
+            "name": "verify status code 200",
             "match": {
               "arguments": [
                 {
-                  "val": "409",
+                  "val": "200",
                   "offset": 19
                 }
               ],
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 5370000,
+              "duration": 600101,
               "status": "passed"
             },
             "line": 7,
@@ -73,57 +73,35 @@
           },
           {
             "result": {
-              "duration": 7290600,
+              "duration": 1157438699,
               "status": "passed"
             },
             "line": 8,
-            "name": "verify response status message \"Conflict\"",
+            "name": "verify response contains 195 characters",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Conflict\"",
-                  "offset": 31
+                  "val": "195",
+                  "offset": 25
                 }
               ],
-              "location": "ApiTest1.verify_response_status_message(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 579037200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify response body says \"error\" :\"Must pass API key for request\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"error\"",
-                  "offset": 26
-                },
-                {
-                  "val": "\"Must pass API key for request\"",
-                  "offset": 35
-                }
-              ],
-              "location": "ApiTest1.verify_response_body_says(String,String)"
+              "location": "ApiTest1.verify_response_contains_characters(int)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@api3"
+            "name": "@api4"
           }
         ]
       }
     ],
-    "name": "verify no key",
+    "name": "verify number of characters",
     "description": "",
-    "id": "verify-no-key",
+    "id": "verify-number-of-characters",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api3.feature",
+    "uri": "file:src/test/resources/features/api4.feature",
     "tags": []
   }
 ]
